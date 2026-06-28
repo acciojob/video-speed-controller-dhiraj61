@@ -1,4 +1,4 @@
-let video = document.querySelector('.player_video');
+let video = document.querySelector('.player__video');
 let toggle = document.getElementById('player_button toggle');
 let play = document.getElementById('play');
 let pause = document.getElementById('pause');
