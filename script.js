@@ -5,8 +5,8 @@ let pause = document.getElementById('pause');
 let progressBar = document.getElementById('progress_filled');
 let volume = document.getElementById('volume');
 let playbackSpeed = document.getElementById('playbackSpeed');
-let rewind = document.getElementById('rewind');
-let skip = document.getElementById('skip');
+let rewind = document.querySelector('.rewind');
+let skip = document.querySelector('.skip');
 
 
 play.style.display = 'none';
