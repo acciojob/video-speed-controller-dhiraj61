@@ -1,4 +1,4 @@
-let video = document.getElementById('player_video');
+let video = document.querySelector('.player_video');
 let toggle = document.getElementById('player_button toggle');
 let play = document.getElementById('play');
 let pause = document.getElementById('pause');
@@ -9,18 +9,18 @@ let rewind = document.getElementById('rewind');
 let skip = document.getElementById('skip');
 
 
-play.style.display = 'block';
-pause.style.display = 'none';
+play.style.display = 'none';
+pause.style.display = 'block';
 
 
 toggle.addEventListener('click',()=>{
 	if(video.paused || video.ended){
-		play.style.display = 'block';
-		pause.style.display = 'none';
-		video.play();
-	}else{
 		play.style.display = 'none';
 		pause.style.display = 'block';
+		video.play();
+	}else{
+		play.style.display = 'block';
+		pause.style.display = 'none';
 		video.pause();
 	}
 })
@@ -34,8 +34,8 @@ video.addEventListener('timeupdate',()=>{
 		progressBar.setAttribute('max',video.duration);
 	}
 	if(video.ended || video.paused){
-		play.style.display = 'none';
-		pause.style.display = 'block';
+		play.style.display = 'block';
+		pause.style.display = 'none';
 	}
 	progressBar.value = video.currentTime;
 })
