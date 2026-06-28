@@ -1,4 +1,4 @@
-let video = document.getElementById('video');
+let video = document.getElementById('player_video');
 let toggle = document.getElementById('player_button toggle');
 let play = document.getElementById('play');
 let pause = document.getElementById('pause');
